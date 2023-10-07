@@ -39,20 +39,25 @@ main {
   background-color: rgb(72, 13, 13);
   display: flex;
   flex-direction: column;
-  justify-content:stretch;
+  justify-content: stretch;
   align-items: center;
   text-align: center;
   color: white;
 }
 main p {
   margin: 0;
-  font-size:medium;
+  font-size: medium;
   margin-top: 30px;
 }
 .carta img {
   width: 300px;
   height: 400px;
   margin-top: 30px;
+  filter: grayscale(100%);
+  transition: filter 0.5s ease-in-out;
+}
+.carta img:hover {
+  filter: grayscale(0%);
 }
 .box {
   width: 300px;
@@ -60,7 +65,7 @@ main p {
   margin-top: 30px;
   animation-name: galeria;
   animation-iteration-count: infinite;
-  animation-duration: 40s;  
+  animation-duration: 40s;
 }
 @keyframes galeria {
   0% {
