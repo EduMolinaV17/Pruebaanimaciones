@@ -1,83 +1,195 @@
-nav{
-    grid-area: nav;
-    background-color: black;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+nav {
+  grid-area: nav;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-nav img{
-    width: 50px;
-    height: 50px;
-    padding: 5px;
+nav img {
+  width: 80px;
+  height: 80px;
+  padding: 5px;
 }
-section{
-    background-image: url(../imgs/Made\ in\ Italy.jpg);
+section {
+  background-image: url(../imgs/0.\ Made\ in\ Italy.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  grid-area: section;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+section p {
+  margin: 0;
+}
+menu {
+  display: flex;
+  margin: 0;
+}
+menu h6 {
+  margin: 0;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+main {
+  grid-area: main;
+  background-color: rgb(72, 13, 13);
+  display: flex;
+  flex-direction: column;
+  justify-content:stretch;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+main p {
+  margin: 0;
+  font-size:medium;
+  margin-top: 30px;
+}
+.carta img {
+  width: 300px;
+  height: 400px;
+  margin-top: 30px;
+}
+.box {
+  width: 300px;
+  height: 400px;
+  margin-top: 30px;
+  animation-name: galeria;
+  animation-iteration-count: infinite;
+  animation-duration: 40s;  
+}
+@keyframes galeria {
+  0% {
+    background-image: url(../imgs/2.\ Trattoria1.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    grid-area: section;
-    color: white;
+  }
+  12.5% {
+    background-image: url(../imgs/3.\ Trattoria2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  25% {
+    background-image: url(../imgs/4.\ Trattoria3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  37.5% {
+    background-image: url(../imgs/5.\ Trattoria4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  50% {
+    background-image: url(../imgs/6.\ Lasagna.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  62.5% {
+    background-image: url(../imgs/7.\ Spaghetti.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  75% {
+    background-image: url(../imgs/8.\ Gnocchi.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  87.5% {
+    background-image: url(../imgs/9.\ Ravioli.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  100% {
+    background-image: url(../imgs/2.\ Trattoria1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+/* .image-gallery {
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
 }
-section p{
-    margin: 0;
-}
-menu{
-    display: flex;
-    margin: 0;
-}
-menu h6{
-    margin: 0;
-    padding-left: 5px;
-    padding-right: 5px;
-}
-main{
-    grid-area: main;
-    background-color:rgb(72, 13, 13);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-main img{
+
+.image {
     width: 100px;
     height: 100px;
+    margin-right: 10px;
+    background-color: #ccc;
+    transition: filter 0.3s ease-in-out;
 }
-.galeria{
+
+.image:hover {
+    filter: grayscale(0%);
+} */
+/* .galeria{
     display: flex;
     gap: 5px;
     align-items: center;
     margin: 0;
     padding: 0;
 }
+.galeria img{
+    width: 130px;
+    height: 130px;
+    transition: all 1s;
+}
+.galeria img:hover{
+    width: 260px;
+    height: 260px;
+}
 .scrolldiv{
-    height: 350px; /* utiliza la medida que necesites */
-    overflow-y: auto; /* podes usar scroll directo en lugar de auto */
+    height: 500px;
+    width: 300px;
+    overflow-y: auto;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 33% 33% 33%;
+    grid-template-rows: 30% 30% 30% 30% 30% 30% 30% 30%;
     margin: 0;
- }
+ } */
 
-footer{
-    grid-area: footer;
-    background-color: rgb(15, 96, 31);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
+footer {
+  grid-area: footer;
+  background-color: rgb(15, 96, 31);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
 }
-body{
-    display: grid;
-    margin: 0;
-    grid-template-columns: 100%;
-    grid-template-rows: 15% 30% 110% 20%;
-    grid-template-areas: 
+.iconos {
+  display: flex;
+  width: 200px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 4px;
+}
+.iconos p {
+  margin: 0;
+}
+body {
+  display: grid;
+  margin: 0;
+  grid-template-columns: 100%;
+  grid-template-rows: 7% 30% 79% 20%;
+  grid-template-areas:
     "nav"
     "section"
     "main"
     "footer";
+  font-family: "Roboto", sans-serif;
 }
