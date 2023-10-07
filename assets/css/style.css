@@ -1,0 +1,83 @@
+nav{
+    grid-area: nav;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+}
+section{
+    background-image: url(../imgs/Made\ in\ Italy.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-area: section;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+section p{
+    margin: 0;
+}
+menu{
+    display: flex;
+    margin: 0;
+}
+menu h6{
+    margin: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+main{
+    grid-area: main;
+    background-color:rgb(72, 13, 13);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main img{
+    width: 100px;
+    height: 100px;
+}
+.galeria{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.scrolldiv{
+    height: 350px; /* utiliza la medida que necesites */
+    overflow-y: auto; /* podes usar scroll directo en lugar de auto */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 33% 33% 33%;
+    margin: 0;
+ }
+
+footer{
+    grid-area: footer;
+    background-color: rgb(15, 96, 31);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+body{
+    display: grid;
+    margin: 0;
+    grid-template-columns: 100%;
+    grid-template-rows: 15% 30% 110% 20%;
+    grid-template-areas: 
+    "nav"
+    "section"
+    "main"
+    "footer";
+}
