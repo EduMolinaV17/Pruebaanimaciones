@@ -190,7 +190,7 @@ body {
   display: grid;
   margin: 0;
   grid-template-columns: 100%;
-  grid-template-rows: 7% 30% 79% 20%;
+  grid-template-rows: 7% 20% 79% 20%;
   grid-template-areas:
     "nav"
     "section"
